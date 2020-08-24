@@ -30,7 +30,7 @@ class DashboardAdapter(
     }
 
     override fun onBindViewHolder(holder: DashboardViewHolder, position: Int) {
-        holder.onBind(listData[holder.adapterPosition], listener)
+        holder.onBind(listData[holder.absoluteAdapterPosition], listener)
     }
 
     override fun getItemCount() = listData.size
@@ -57,7 +57,7 @@ class DashboardAdapter(
                 tvName.text = data.name
                 tvEmail.text = data.email
 
-                if (adapterPosition != RecyclerView.NO_POSITION) {
+                if (absoluteAdapterPosition != RecyclerView.NO_POSITION) {
                     setOnClickListener {
                         listener.invoke(data.id)
                     }

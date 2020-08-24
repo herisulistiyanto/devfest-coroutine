@@ -11,7 +11,7 @@ import com.google.devfest.mvvmcoroutine.model.response.Data
 class UserRemoteDataSource(private val userServices: UserServices) {
 
     suspend fun getAllUsers(): List<Data> {
-        TODO()
+        return userServices.getAllUsers().body()?.data.orEmpty()
     }
 
 }
