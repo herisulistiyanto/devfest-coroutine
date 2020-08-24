@@ -2,10 +2,10 @@
 
 ### Docs
 * You can find the server api docs on this [swagger page](https://kotlinspringcrud.herokuapp.com/swagger-ui.html#/student-controller)
-* There are several `TODO()` to be solve
+* Link speakerdeck [here](https://speakerdeck.com/herisulistiyanto/using-kotlin-coroutines)
 
 ### In this project using :
-* Retrofit 2.6.1 + OkHttp
+* Retrofit 2.6.4 + OkHttp
 * Koin
 * Kotlin Coroutine
 * MVVM
